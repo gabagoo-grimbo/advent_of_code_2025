@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsub4hjjtd5np"]
+[gd_scene load_steps=4 format=3 uid="uid://bsub4hjjtd5np"]
 
 [ext_resource type="PackedScene" uid="uid://kyfel7pgr7ee" path="res://objects/back_button/back_button.tscn" id="1_gba2d"]
+[ext_resource type="Script" uid="uid://ctdqjb5nglinl" path="res://rooms/day_2/day_2.gd" id="1_gcql4"]
 [ext_resource type="Texture2D" uid="uid://bium2y1fwvc8b" path="res://assets/images/reindeer.jpg" id="1_up3uw"]
 
 [node name="Day2" type="PanelContainer"]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gcql4")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2
@@ -40,6 +42,12 @@ text = "input"
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+text = "11-22,95-115,998-1012,1188511880-1188511890,222220-222224,
+1698522-1698528,446443-446449,38593856-38593862,565653-565659,
+824824821-824824827,2121212118-2121212124"
+placeholder_text = "11-22,95-115,998-1012,1188511880-1188511890,222220-222224,
+1698522-1698528,446443-446449,38593856-38593862,565653-565659,
+824824821-824824827,2121212118-2121212124"
 
 [node name="SolveButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
