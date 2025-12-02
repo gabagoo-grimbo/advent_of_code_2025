@@ -1,0 +1,12 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://d1csqw1hh872s"]
+
+[ext_resource type="FontVariation" uid="uid://dxcqtt26bqp68" path="res://resources/fonts/christmas.tres" id="1_yga3w"]
+
+[resource]
+default_font = ExtResource("1_yga3w")
+default_font_size = 24
+MarginContainer/constants/margin_bottom = 16
+MarginContainer/constants/margin_left = 16
+MarginContainer/constants/margin_right = 16
+MarginContainer/constants/margin_top = 16
+VBoxContainer/constants/separation = 8

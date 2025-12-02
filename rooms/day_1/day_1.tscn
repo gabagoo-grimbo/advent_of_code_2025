@@ -1,0 +1,108 @@
+[gd_scene load_steps=4 format=3 uid="uid://yq20exb1uhwf"]
+
+[ext_resource type="Script" uid="uid://c2j0xjgkk1sa" path="res://rooms/day_1/day_1.gd" id="1_dbx81"]
+[ext_resource type="PackedScene" uid="uid://kyfel7pgr7ee" path="res://objects/back_button/back_button.tscn" id="1_q8amh"]
+[ext_resource type="Texture2D" uid="uid://b4q3bk21hjtpt" path="res://assets/images/santa.jpg" id="2_22guw"]
+
+[node name="Day1" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dbx81")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "DAY 1"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "mode"
+
+[node name="ModeMenu" type="OptionButton" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "part 1"
+popup/item_0/id = 0
+popup/item_1/text = "part 2"
+popup/item_1/id = 1
+
+[node name="StartingPositionLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Dial Starting position"
+
+[node name="StartingPositionText" type="TextEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "50"
+
+[node name="InputLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Input"
+
+[node name="InputText" type="TextEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "L68
+L30
+R48
+L5
+R60
+L55
+L1
+L99
+R14
+L82"
+
+[node name="SolveButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Solve"
+
+[node name="OutputLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Output"
+
+[node name="OutputText" type="TextEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+placeholder_text = "output"
+editable = false
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("2_22guw")
+stretch_mode = 2
+
+[node name="BackButton" parent="MarginContainer/VBoxContainer" instance=ExtResource("1_q8amh")]
+layout_mode = 2
+size_flags_vertical = 8

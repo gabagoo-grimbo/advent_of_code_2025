@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://3r0mgid5vk7k"]
+
+[ext_resource type="Script" uid="uid://dq5d5h1w0dsff" path="res://rooms/main/main.gd" id="1_qgb08"]
+
+[node name="Main" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource("1_qgb08")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Advent of code"
+
+[node name="Day1Button" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Day 1"

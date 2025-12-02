@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://dxcqtt26bqp68"]
+
+[ext_resource type="FontFile" uid="uid://cg5dvcm0ipqh0" path="res://assets/fonts/Amore Christmas.otf" id="1_1dp6n"]
+
+[resource]
+base_font = ExtResource("1_1dp6n")
